@@ -323,6 +323,3 @@ Official references:
   https://onnx.ai/sklearn-onnx/auto_examples/plot_convert_zipmap.html
 - ONNX Runtime thread controls:
   https://onnxruntime.ai/docs/performance/tune-performance/threading.html
-
-#   s c i k i t - l e a r n _ O N N X  
- 
