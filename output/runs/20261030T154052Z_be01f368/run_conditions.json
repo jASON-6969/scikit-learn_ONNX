@@ -1,0 +1,20 @@
+{
+  "operator": "Codex workflow validation",
+  "power_mode": "Not recorded",
+  "plugged_in": "Not recorded",
+  "background_load": "Not controlled during workflow validation",
+  "purpose": "Workflow validation",
+  "notes": "Full 12000-call end-to-end validation of automatic logging and Excel import; exclude from teammate stability comparison.",
+  "workflow_id": "20261030T154341Z_480eb779",
+  "workflow_log_directory": "C:\\Users\\jason\\Documents\\cource\\y4sem1\\comp4330\\scikit-learn_ONNX\\logs\\20261030T154341Z_480eb779",
+  "console_log": "C:\\Users\\jason\\Documents\\cource\\y4sem1\\comp4330\\scikit-learn_ONNX\\logs\\20261030T154341Z_480eb779\\console.log",
+  "source_directory": "C:\\Users\\jason\\Documents\\cource\\y4sem1\\comp4330\\scikit-learn_ONNX\\output\\runs\\20261030T154052Z_be01f368",
+  "workbook_path": "C:\\Users\\jason\\Documents\\cource\\y4sem1\\comp4330\\scikit-learn_ONNX\\ONNX_Experiment_Tracker.xlsx",
+  "hostname": "asus",
+  "measurement_workflow_id": "20261030T154052Z_be01f368",
+  "measurement_console_log": "C:\\Users\\jason\\Documents\\cource\\y4sem1\\comp4330\\scikit-learn_ONNX\\logs\\20261030T154052Z_be01f368\\console.log",
+  "run_started_at_utc": "2026-10-30T15:40:52.517665+00:00",
+  "run_finished_at_utc": "2026-10-30T15:41:19.987376+00:00",
+  "verification_finished_at_utc": "2026-10-30T15:43:44.144090+00:00",
+  "import_hostname": "asus"
+}

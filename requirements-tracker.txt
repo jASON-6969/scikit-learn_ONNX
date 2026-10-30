@@ -1,0 +1,4 @@
+# Portable experiment runner and Excel import dependencies.
+-r requirements-lock.txt
+openpyxl==3.1.5
+et-xmlfile==2.0.0

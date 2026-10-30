@@ -1,0 +1,40 @@
+{
+  "validated_at_utc": "2026-10-30T15:53:58.916735+00:00",
+  "unit_and_integration_tests": {
+    "passed": true,
+    "count": 25
+  },
+  "type_check": {
+    "passed": true,
+    "source_files": 21
+  },
+  "dependency_check": "passed",
+  "full_workflow": {
+    "output": "output/runs/20261030T154052Z_be01f368",
+    "verification_passed": true,
+    "groups": 12,
+    "timing_rows": 12000,
+    "excel_run_id": "RUN-002",
+    "purpose": "Workflow validation, excluded from teammate stability comparison"
+  },
+  "duplicate_import": "passed; RUN-002 reused and workbook not duplicated",
+  "native_excel_checks": [
+    "imported run formula recalculation",
+    "blank future inputs",
+    "zero probability error",
+    "RUN-021 expansion"
+  ],
+  "portable_extraction_check": {
+    "passed": true,
+    "path_contains_spaces": true,
+    "test_kind": "120-call smoke run using existing installed Python environment",
+    "run_imported_as": "RUN-003 in disposable extracted copy only"
+  },
+  "returned_evidence_merge_check": "passed in disposable master workbook after moving the run directory",
+  "setup_entrypoint": "passed on the existing local Python environment",
+  "limitations": [
+    "No second physical computer was tested.",
+    "A teammate must install 64-bit Python 3.12 and download pinned packages during setup.",
+    "Excel is not required for recording; formula caches recalculate in a spreadsheet application."
+  ]
+}

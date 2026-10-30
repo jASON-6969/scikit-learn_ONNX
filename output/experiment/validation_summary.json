@@ -1,0 +1,52 @@
+{
+  "date_hong_kong": "2026-10-14",
+  "unit_and_integration_tests": {
+    "passed": true,
+    "test_methods": 8,
+    "command": ".\\.venv\\Scripts\\python.exe -B -X utf8 -m unittest discover -s tests -p test_*.py -v"
+  },
+  "type_checks": {
+    "passed": true,
+    "checked_source_files": 16,
+    "commands": [
+      ".\\.venv\\Scripts\\python.exe -m mypy",
+      ".\\.venv\\Scripts\\python.exe -m mypy scripts\\build_proposal.py scripts\\package_project.py"
+    ]
+  },
+  "dependency_check": {
+    "passed": true,
+    "command": ".\\.venv\\Scripts\\python.exe -m pip check"
+  },
+  "experiment": {
+    "status": "complete",
+    "cells": 12,
+    "timed_calls_per_cell": 1000,
+    "total_timed_calls": 12000
+  },
+  "saved_run_verification": {
+    "passed": true,
+    "groups": 12,
+    "timing_rows": 12000,
+    "checks": [
+      "source and model hashes",
+      "disjoint held-out split",
+      "reloaded prediction equivalence",
+      "raw timing counts",
+      "summary statistics"
+    ]
+  },
+  "visual_checks": {
+    "proposal_pdf_pages": 4,
+    "proposal_all_pages_inspected": true,
+    "benchmark_pngs_inspected": [
+      "latency.png",
+      "throughput.png",
+      "zipmap_speedup.png"
+    ]
+  },
+  "limits": [
+    "single local run on one machine/model/dataset",
+    "no independent teammate rerun yet",
+    "member identities and official submission still require the team"
+  ]
+}

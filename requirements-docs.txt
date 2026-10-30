@@ -1,0 +1,4 @@
+# Optional: only needed to rebuild the proposal documents, not to run the benchmark.
+reportlab==4.4.9
+python-docx==1.2.0
+
