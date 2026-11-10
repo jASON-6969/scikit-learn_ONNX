@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "groups": 12,
+  "timing_rows": 12000,
+  "checks": [
+    "source and model hashes",
+    "disjoint held-out split",
+    "reloaded prediction equivalence",
+    "raw timing counts",
+    "summary statistics"
+  ]
+}

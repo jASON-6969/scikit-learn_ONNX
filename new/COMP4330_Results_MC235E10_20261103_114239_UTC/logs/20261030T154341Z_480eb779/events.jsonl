@@ -1,0 +1,4 @@
+{"time_utc": "2026-10-30T15:43:41.096537+00:00", "stage": "verification", "status": "running", "command": ["C:\\Users\\jason\\Documents\\cource\\y4sem1\\comp4330\\scikit-learn_ONNX\\.venv\\Scripts\\python.exe", "-B", "-X", "utf8", "-u", "-m", "onnx_benchmark", "verify", "--output", "C:\\Users\\jason\\Documents\\cource\\y4sem1\\comp4330\\scikit-learn_ONNX\\output\\runs\\20261030T154052Z_be01f368"]}
+{"time_utc": "2026-10-30T15:43:44.142088+00:00", "stage": "verification", "status": "complete", "return_code": 0}
+{"time_utc": "2026-10-30T15:43:44.145093+00:00", "stage": "excel_import", "status": "running"}
+{"time_utc": "2026-10-30T15:43:44.820200+00:00", "stage": "excel_import", "status": "complete", "result": {"run_id": "RUN-002", "imported": false, "workbook_path": "C:\\Users\\jason\\Documents\\cource\\y4sem1\\comp4330\\scikit-learn_ONNX\\ONNX_Experiment_Tracker.xlsx", "evidence_id": "1d1c41cfda39a622889b8aebc14a72afe62667ca56bcabacf2c4f172e561fbfd"}}

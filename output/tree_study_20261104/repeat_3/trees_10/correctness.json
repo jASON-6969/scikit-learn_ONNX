@@ -1,0 +1,140 @@
+{
+  "passed": true,
+  "probability_tolerance": 1e-05,
+  "test_count": 114,
+  "baseline_accuracy": 0.9385964912280702,
+  "accuracy_scope": "original non-repeated held-out test set only",
+  "variants": {
+    "sklearn": {
+      "label_agreement": 1.0,
+      "max_probability_abs_error": 0.0,
+      "probabilities_finite": true,
+      "probabilities_bounded": true,
+      "probability_rows_normalized": true,
+      "passed": true,
+      "accuracy": 0.9385964912280702
+    },
+    "onnx_zipmap": {
+      "label_agreement": 1.0,
+      "max_probability_abs_error": 1.1920928955078125e-07,
+      "probabilities_finite": true,
+      "probabilities_bounded": true,
+      "probability_rows_normalized": true,
+      "passed": true,
+      "accuracy": 0.9385964912280702
+    },
+    "onnx_tensor": {
+      "label_agreement": 1.0,
+      "max_probability_abs_error": 1.1920928955078125e-07,
+      "probabilities_finite": true,
+      "probabilities_bounded": true,
+      "probability_rows_normalized": true,
+      "passed": true,
+      "accuracy": 0.9385964912280702
+    }
+  },
+  "performance_batch_checks": {
+    "sklearn": {
+      "1": {
+        "label_agreement": 1.0,
+        "max_probability_abs_error": 0.0,
+        "probabilities_finite": true,
+        "probabilities_bounded": true,
+        "probability_rows_normalized": true,
+        "passed": true
+      },
+      "16": {
+        "label_agreement": 1.0,
+        "max_probability_abs_error": 0.0,
+        "probabilities_finite": true,
+        "probabilities_bounded": true,
+        "probability_rows_normalized": true,
+        "passed": true
+      },
+      "64": {
+        "label_agreement": 1.0,
+        "max_probability_abs_error": 0.0,
+        "probabilities_finite": true,
+        "probabilities_bounded": true,
+        "probability_rows_normalized": true,
+        "passed": true
+      },
+      "256": {
+        "label_agreement": 1.0,
+        "max_probability_abs_error": 0.0,
+        "probabilities_finite": true,
+        "probabilities_bounded": true,
+        "probability_rows_normalized": true,
+        "passed": true
+      }
+    },
+    "onnx_zipmap": {
+      "1": {
+        "label_agreement": 1.0,
+        "max_probability_abs_error": 1.1920928955078125e-07,
+        "probabilities_finite": true,
+        "probabilities_bounded": true,
+        "probability_rows_normalized": true,
+        "passed": true
+      },
+      "16": {
+        "label_agreement": 1.0,
+        "max_probability_abs_error": 1.1920928955078125e-07,
+        "probabilities_finite": true,
+        "probabilities_bounded": true,
+        "probability_rows_normalized": true,
+        "passed": true
+      },
+      "64": {
+        "label_agreement": 1.0,
+        "max_probability_abs_error": 1.1920928955078125e-07,
+        "probabilities_finite": true,
+        "probabilities_bounded": true,
+        "probability_rows_normalized": true,
+        "passed": true
+      },
+      "256": {
+        "label_agreement": 1.0,
+        "max_probability_abs_error": 1.1920928955078125e-07,
+        "probabilities_finite": true,
+        "probabilities_bounded": true,
+        "probability_rows_normalized": true,
+        "passed": true
+      }
+    },
+    "onnx_tensor": {
+      "1": {
+        "label_agreement": 1.0,
+        "max_probability_abs_error": 1.1920928955078125e-07,
+        "probabilities_finite": true,
+        "probabilities_bounded": true,
+        "probability_rows_normalized": true,
+        "passed": true
+      },
+      "16": {
+        "label_agreement": 1.0,
+        "max_probability_abs_error": 1.1920928955078125e-07,
+        "probabilities_finite": true,
+        "probabilities_bounded": true,
+        "probability_rows_normalized": true,
+        "passed": true
+      },
+      "64": {
+        "label_agreement": 1.0,
+        "max_probability_abs_error": 1.1920928955078125e-07,
+        "probabilities_finite": true,
+        "probabilities_bounded": true,
+        "probability_rows_normalized": true,
+        "passed": true
+      },
+      "256": {
+        "label_agreement": 1.0,
+        "max_probability_abs_error": 1.1920928955078125e-07,
+        "probabilities_finite": true,
+        "probabilities_bounded": true,
+        "probability_rows_normalized": true,
+        "passed": true
+      }
+    }
+  }
+}

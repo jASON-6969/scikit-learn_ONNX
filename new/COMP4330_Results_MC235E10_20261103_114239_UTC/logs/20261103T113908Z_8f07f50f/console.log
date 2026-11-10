@@ -1,0 +1,19 @@
+COMMAND ["C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\.venv\\Scripts\\python.exe", "-B", "-X", "utf8", "-u", "-m", "onnx_benchmark", "run", "--output", "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\output\\runs\\20261103T113908Z_8f07f50f", "--warmup", "50", "--rounds", "10", "--calls", "100"]
+Correctness passed on 114 distinct held-out cases
+Measured batch 1: 1000 calls per variant
+Measured batch 16: 1000 calls per variant
+Measured batch 64: 1000 calls per variant
+Measured batch 256: 1000 calls per variant
+COMMAND ["C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\.venv\\Scripts\\python.exe", "-B", "-X", "utf8", "-u", "-m", "onnx_benchmark", "verify", "--output", "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\output\\runs\\20261103T113908Z_8f07f50f"]
+{
+  "passed": true,
+  "groups": 12,
+  "timing_rows": 12000,
+  "checks": [
+    "source and model hashes",
+    "disjoint held-out split",
+    "reloaded prediction equivalence",
+    "raw timing counts",
+    "summary statistics"
+  ]
+}

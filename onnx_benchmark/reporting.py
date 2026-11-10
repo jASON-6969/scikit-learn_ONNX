@@ -242,12 +242,13 @@ def _correctness_lines(correctness: dict[str, object]) -> list[str]:
 
 
 def _results_markdown(
-    rows: list[_SummaryRow], correctness: dict[str, object], has_setup: bool
+    rows: list[_SummaryRow], correctness: dict[str, object], has_setup: bool,
+    n_estimators: int,
 ) -> str:
     lines = [
         "# CPU inference benchmark results",
         "",
-        "This run compares the same trained 100-tree Random Forest on the Breast "
+        f"This run compares the same trained {n_estimators}-tree Random Forest on the Breast "
         "Cancer Wisconsin dataset using scikit-learn and two ONNX Runtime output "
         "representations. All measurements come from this run on one CPU machine. "
         "Hardware and software versions are recorded in "
@@ -361,7 +362,11 @@ def generate_report(output_dir: Path) -> None:
     has_setup = setup_path.is_file()
     if has_setup:
         _read_json_object(setup_path)
-    markdown = _results_markdown(rows, correctness, has_setup)
+    config = _read_json_object(output_dir / "config.json")
+    n_estimators = config.get("n_estimators")
+    if not isinstance(n_estimators, int) or isinstance(n_estimators, bool) or n_estimators <= 0:
+        raise ValueError("config.json must contain a positive integer n_estimators.")
+    markdown = _results_markdown(rows, correctness, has_setup, n_estimators)
     figures_dir = output_dir / "figures"
     figures_dir.mkdir(parents=True, exist_ok=True)
     _plot_metric(

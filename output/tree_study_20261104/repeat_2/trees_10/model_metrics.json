@@ -1,0 +1,8 @@
+{
+  "n_estimators": 10,
+  "total_nodes": 326,
+  "max_depth": 10,
+  "sklearn_bytes": 31369,
+  "onnx_zipmap_bytes": 12696,
+  "onnx_tensor_bytes": 12546
+}

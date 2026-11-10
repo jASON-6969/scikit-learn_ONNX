@@ -197,6 +197,65 @@ for its recorded code, not for a modified implementation.
 
 ## Experimental design
 
+### Tree-count study and profiling
+
+The separate study compares **10, 100 and 500 trees**, with three independent
+repeats of each forest size. It keeps the existing data split, seed 42,
+single-thread CPU settings, four batch sizes, and three runtime variants.
+Each child experiment trains one forest and converts that same forest twice.
+The execution order rotates across repeats: `10/100/500`, `100/500/10`, then
+`500/10/100`. With the full defaults, the study records **108,000 timed calls**.
+
+```powershell
+.\.venv\Scripts\python.exe -B -X utf8 -u -m onnx_benchmark study --output output/tree_study_20261104 --trees 10 100 500 --repeats 3 --profile-calls 100
+.\.venv\Scripts\python.exe -B -X utf8 -m onnx_benchmark study-verify --output output/tree_study_20261104
+```
+
+`study` defaults to `output/tree_study`. Use a new empty directory for every study.
+The options `--warmup 50 --rounds 10 --calls 100` retain the full measurement
+protocol; smaller values are for development checks. All steady-state timings
+finish before profiling or plotting begins. Profiling uses the saved models and
+inputs in separate passes, so profiler overhead is excluded from speedup results.
+
+Study outputs include `results_zh.md` (Chinese analysis), `runs.csv` (individual
+run summaries), `summary.csv` (cross-repeat statistics), `model_sizes.csv`,
+`setup_times.csv`, `profiling_summary.csv`, and four PNG figures. Each child
+directory retains its models, data, timings, correctness checks, environment,
+and provenance, plus raw cProfile `.pstats` and ONNX Runtime profiling JSON.
+Serialized file sizes, tree node counts, and maximum depth describe model size;
+file size is not a measurement of runtime memory consumption.
+
+Speedup is calculated within each independent run using the corresponding
+scikit-learn baseline, then summarized as the median and observed minimum/maximum
+across repeats. Calls within one run are not treated as independent experiments.
+Preparation durations remain separate from steady-state inference. cProfile
+reports function self/cumulative times; its category summaries sum self time
+only. ORT summaries report actual operator events within measured `model_run`
+windows, excluding initialization and warmup.
+
+The two profilers observe different execution boundaries and add overhead.
+Their numbers are not a common, exact breakdown of benchmark latency.
+scikit-learn already uses compiled tree traversal; the analysis examines input
+validation, Python tree dispatch, probability aggregation, native ensemble
+execution, and output representation. The ZipMap on/off latency difference
+includes the whole graph and returned-object path, rather than isolating one
+operator. Larger models are not assumed to have a greater speedup.
+
+To regenerate the study report and figures without training or timing again:
+
+```powershell
+.\.venv\Scripts\python.exe -B -X utf8 -m onnx_benchmark study-report --output output/tree_study_20261104
+```
+
+`study-verify` reloads child models, checks saved evidence/source hashes and
+recomputes the combined tables. Changing benchmark sources makes old runs
+historical evidence for their recorded version; verification remains strict.
+The Excel launcher above continues to run the original single-model workflow;
+study results are saved separately and are not automatically imported into its
+100-tree tracker.
+
+### Original single-model experiment
+
 | Setting | Fixed choice |
 | --- | --- |
 | Dataset | `sklearn.datasets.load_breast_cancer`: 569 samples, 30 features, 2 classes |

@@ -1,0 +1,82 @@
+{
+  "onnx_zipmap": {
+    "file": "onnx_zipmap.onnx",
+    "sha256": "7f42a5cb558ce6f2a43a8d6264b8d2d48ca1e41084f1bea02c0e8f8e2e6df7c0",
+    "zipmap": true,
+    "bytes": 130821,
+    "nodes": [
+      {
+        "op_type": "TreeEnsembleClassifier",
+        "domain": "ai.onnx.ml"
+      },
+      {
+        "op_type": "Cast",
+        "domain": ""
+      },
+      {
+        "op_type": "ZipMap",
+        "domain": "ai.onnx.ml"
+      }
+    ],
+    "requested_opsets": {
+      "": 17,
+      "ai.onnx.ml": 3
+    },
+    "opsets": {
+      "ai.onnx.ml": 1,
+      "": 9
+    },
+    "opset_imports": [
+      {
+        "domain": "ai.onnx.ml",
+        "version": 1
+      },
+      {
+        "domain": "",
+        "version": 9
+      }
+    ],
+    "outputs": [
+      "output_label",
+      "output_probability"
+    ]
+  },
+  "onnx_tensor": {
+    "file": "onnx_tensor.onnx",
+    "sha256": "109fb9db417beec3b6dd3c7b0b82222db9f0e68b4da73ae0355195517fabf518",
+    "zipmap": false,
+    "bytes": 130671,
+    "nodes": [
+      {
+        "op_type": "TreeEnsembleClassifier",
+        "domain": "ai.onnx.ml"
+      }
+    ],
+    "requested_opsets": {
+      "": 17,
+      "ai.onnx.ml": 3
+    },
+    "opsets": {
+      "ai.onnx.ml": 1,
+      "": 17
+    },
+    "opset_imports": [
+      {
+        "domain": "ai.onnx.ml",
+        "version": 1
+      },
+      {
+        "domain": "",
+        "version": 17
+      },
+      {
+        "domain": "",
+        "version": 17
+      }
+    ],
+    "outputs": [
+      "label",
+      "probabilities"
+    ]
+  }
+}

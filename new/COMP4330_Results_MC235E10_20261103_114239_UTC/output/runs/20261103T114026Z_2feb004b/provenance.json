@@ -1,0 +1,44 @@
+{
+  "source_sha256": {
+    "__init__.py": "0c8d4817360d3952c700caba874c15fba95bfb2c1fcdffc5be91ee5dd7fc8629",
+    "__main__.py": "3c0666ee7f13880ba788c7ea762401cd921461fa1b9f5bd2ed3d23fb56498b9b",
+    "artifacts.py": "3683a20924e10354ecb2cafd11b800c4af4662bd14e6e893d92c004289f3264e",
+    "benchmark.py": "c2c79b4f99def3c8ee0bd8812bc5a946b4ddba5d2b7e2f1d6cb8dd8d4760204a",
+    "cli.py": "87d13626a3b5f8efb5d827af597fab058939afcf9da710837ed06d61a581e1a3",
+    "config.py": "d9a4c28635f365ea65cf903fdcaea0e943f0dbd3be85a7e1f3b0a297e672ef18",
+    "conversion.py": "2021d38a9060947b3c7f6ac100b58f136c84f3cfaf92f6a6d337bc4210566572",
+    "data_model.py": "9919bc45517af0cf007cb952f3c07865c33ae32a49e233bd7e5367858e4a7aab",
+    "environment.py": "5bd50101bfdc12451cdf71d54436902df333edce7a7689dde387e367bb2d64bf",
+    "reporting.py": "8d34720d37bce776e829c31b4e6fc9ac61e6d7f5fe8eeb5818a3d75b6b8d69e2",
+    "runtime.py": "368329cc5700ef8ca49f3f5b41a0a8207bf8d35a11c2e6afd4fb811e6ac77d0e",
+    "validation.py": "86e88450984db812cee6258d66428b944a3a08d87ccb3d946d74aa0efb4aaf8e"
+  },
+  "artifacts_sha256": {
+    "dataset.npz": "cff011cc782654f1526e8d46c616b2f959024d62f348fd50cc43da63e2fac0e1",
+    "random_forest.joblib": "6b322948035c73be8915d4715e1b97376bf2db1d64633d4964b48fc94cf87d2a",
+    "onnx_zipmap.onnx": "ee5a7eb2d559a7100f11d3960b93f4d5876e9a40fd6f8df71c38806987fe2b9d",
+    "onnx_tensor.onnx": "a99ab7daf1531dc18f82b3ec87607cf037f1c5130b67d446fb2fc6763ac80697",
+    "batch_indices.npz": "20b1c6fd1d24c19ad800224539ef3c8b1bb3f7e6c1777fba9b07d486822bbd30"
+  },
+  "command": [
+    "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\onnx_benchmark\\__main__.py",
+    "run",
+    "--output",
+    "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\output\\runs\\20261103T114026Z_2feb004b",
+    "--warmup",
+    "50",
+    "--rounds",
+    "10",
+    "--calls",
+    "100"
+  ],
+  "benchmark_scope": "probability API wall time, including native output materialization",
+  "excluded": [
+    "load",
+    "session creation",
+    "input preparation",
+    "validation",
+    "ZipMap-to-matrix normalization",
+    "result destruction"
+  ]
+}

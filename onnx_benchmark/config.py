@@ -1,6 +1,6 @@
 """Central experiment settings shared by training, conversion and measurement."""
 
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from typing import Any
 
 
@@ -27,6 +27,23 @@ class ExperimentConfig:
             raise ValueError("invalid benchmark repetition counts")
         if self.probability_tolerance <= 0:
             raise ValueError("probability_tolerance must be positive")
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class StudyConfig:
+    trees: tuple[int, ...] = (10, 100, 500)
+    repeats: int = 3
+    profile_calls: int = 100
+    experiment: ExperimentConfig = field(default_factory=ExperimentConfig)
+
+    def __post_init__(self) -> None:
+        if not self.trees or any(tree <= 0 for tree in self.trees) or len(set(self.trees)) != len(self.trees):
+            raise ValueError("trees must contain distinct positive counts")
+        if self.repeats <= 0 or self.profile_calls <= 0:
+            raise ValueError("repeats and profile_calls must be positive")
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)

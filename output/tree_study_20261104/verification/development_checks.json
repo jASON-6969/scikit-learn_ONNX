@@ -1,0 +1,37 @@
+{
+  "unit_tests": {
+    "command": ".venv/Scripts/python.exe -B -X utf8 -m unittest discover -s tests -v",
+    "tests": 38,
+    "passed": true,
+    "duration_seconds": 35.175
+  },
+  "type_check": {
+    "command": ".venv/Scripts/python.exe -B -X utf8 -m mypy",
+    "source_files": 22,
+    "passed": true
+  },
+  "experiment": {
+    "passed": true,
+    "runs": 9,
+    "timing_rows": 108000,
+    "groups": 108,
+    "checks": [
+      "source and evidence hashes",
+      "rotating tree order",
+      "matched split and batch inputs",
+      "child prediction equivalence and raw timing statistics",
+      "matching runtime settings",
+      "complete profiling matrix",
+      "recomputed study tables"
+    ]
+  },
+  "visual_qa": {
+    "inspected": [
+      "latency.png",
+      "speedup.png",
+      "model_size.png",
+      "profiling.png"
+    ],
+    "passed": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "sklearn": {
+    "n_jobs": 1,
+    "native_threadpools": 1,
+    "requested_output": "probabilities"
+  },
+  "onnx_zipmap": {
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "intra_op_num_threads": 1,
+    "inter_op_num_threads": 1,
+    "execution_mode": "ORT_SEQUENTIAL",
+    "graph_optimization_level": "ORT_ENABLE_ALL",
+    "input": "features",
+    "requested_output": "output_probability",
+    "output_type": "seq(map(int64,tensor(float)))",
+    "python_output_normalization_timed": false,
+    "input_feed_prepared_before_timing": true
+  },
+  "onnx_tensor": {
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "intra_op_num_threads": 1,
+    "inter_op_num_threads": 1,
+    "execution_mode": "ORT_SEQUENTIAL",
+    "graph_optimization_level": "ORT_ENABLE_ALL",
+    "input": "features",
+    "requested_output": "probabilities",
+    "output_type": "tensor(float)",
+    "python_output_normalization_timed": false,
+    "input_feed_prepared_before_timing": true
+  }
+}

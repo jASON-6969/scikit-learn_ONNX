@@ -1,0 +1,34 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261103193601
+Username: STUDENTDMN\s1323146
+RunAs User: STUDENTDMN\s1323146
+Configuration Name: 
+Machine: MC235E10 (Microsoft Windows NT 10.0.19044.0)
+Host Application: powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\scripts\run_team_experiments.ps1
+Process ID: 8356
+PSVersion: 5.1.19041.3803
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.3803
+BuildVersion: 10.0.19041.3803
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Keep the same power and workload conditions. Run only one benchmark at a time.
+Close ONNX_Experiment_Tracker.xlsx in Excel before starting.
+Planned runs: 4. Each successful run is freshly verified and added to the tracker.
+
+Starting Independent reproduction (1 of 4).
+usage: __main__.py run [-h] [--output OUTPUT] [--workbook WORKBOOK] [--operator OPERATOR]
+                       [--plugged-in {Yes,No,Not recorded}] [--power-mode POWER_MODE]
+                       [--background-load BACKGROUND_LOAD] [--purpose PURPOSE] [--notes NOTES] [--warmup WARMUP]
+                       [--rounds ROUNDS] [--calls CALLS]
+__main__.py run: error: argument --plugged-in: invalid choice: 'yes' (choose from 'Yes', 'No', 'Not recorded')
+Run 1 stopped. Read the workflow log and recovery command printed above. Do not delete the run folder.
+Team session log: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\logs\team_20261103_193601_925d2534.log
+**********************
+Windows PowerShell transcript end
+End time: 20261103193601
+**********************

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "runs": 9,
+  "timing_rows": 108000,
+  "groups": 108,
+  "checks": [
+    "source and evidence hashes",
+    "rotating tree order",
+    "matched split and batch inputs",
+    "child prediction equivalence and raw timing statistics",
+    "matching runtime settings",
+    "complete profiling matrix",
+    "recomputed study tables"
+  ]
+}

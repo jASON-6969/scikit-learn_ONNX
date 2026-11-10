@@ -1,0 +1,15 @@
+{
+  "unit": "seconds",
+  "repetitions": 1,
+  "training": 0.07912480000049982,
+  "sklearn_model_load": 0.007368799999312614,
+  "conversion": {
+    "onnx_zipmap": 0.08565049999924668,
+    "onnx_tensor": 0.0747123000001011
+  },
+  "ort_session_creation": {
+    "onnx_zipmap": 0.00578989999849,
+    "onnx_tensor": 0.0018546000010246644
+  },
+  "scope": "single observed setup durations, excluded from steady-state inference"
+}

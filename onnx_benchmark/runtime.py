@@ -14,6 +14,19 @@ from .data_model import FloatArray
 ProbabilityArray = NDArray[np.float64]
 
 
+def create_session_options(profile_prefix: Path | None = None) -> Any:
+    """Keep diagnostic and timed sessions on the same single-thread CPU policy."""
+    options = ort.SessionOptions()
+    options.intra_op_num_threads = 1
+    options.inter_op_num_threads = 1
+    options.execution_mode = ort.ExecutionMode.ORT_SEQUENTIAL
+    options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_ALL
+    if profile_prefix is not None:
+        options.enable_profiling = True
+        options.profile_file_prefix = str(profile_prefix)
+    return options
+
+
 @dataclass
 class InferenceAdapter:
     variant: str
@@ -41,11 +54,7 @@ def create_adapters(
     )]
     setup_times: dict[str, float] = {}
     for variant, path in paths.items():
-        options = ort.SessionOptions()
-        options.intra_op_num_threads = 1
-        options.inter_op_num_threads = 1
-        options.execution_mode = ort.ExecutionMode.ORT_SEQUENTIAL
-        options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_ALL
+        options = create_session_options()
         start = perf_counter()
         session = ort.InferenceSession(str(path), sess_options=options, providers=["CPUExecutionProvider"])
         setup_times[variant] = perf_counter() - start

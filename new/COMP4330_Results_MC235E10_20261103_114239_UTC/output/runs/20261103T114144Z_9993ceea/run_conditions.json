@@ -1,0 +1,19 @@
+{
+  "operator": "13231466",
+  "power_mode": "Best performance",
+  "plugged_in": "Yes",
+  "background_load": "idle",
+  "purpose": "Controlled repeat",
+  "notes": " Team batch team_20261103_193724_e652b8ff. Run 4 of 4. Stability repetition 3; exclude the first independent reproduction from the three-repeat comparison.",
+  "workflow_id": "20261103T114144Z_9993ceea",
+  "workflow_log_directory": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\logs\\20261103T114144Z_9993ceea",
+  "console_log": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\logs\\20261103T114144Z_9993ceea\\console.log",
+  "source_directory": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\output\\runs\\20261103T114144Z_9993ceea",
+  "workbook_path": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\ONNX_Experiment_Tracker.xlsx",
+  "hostname": "MC235E10",
+  "measurement_workflow_id": "20261103T114144Z_9993ceea",
+  "measurement_console_log": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\logs\\20261103T114144Z_9993ceea\\console.log",
+  "run_started_at_utc": "2026-11-03T11:41:44.807178+00:00",
+  "run_finished_at_utc": "2026-11-03T11:42:01.289054+00:00",
+  "verification_finished_at_utc": "2026-11-03T11:42:02.785050+00:00"
+}

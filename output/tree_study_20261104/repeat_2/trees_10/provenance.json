@@ -1,0 +1,55 @@
+{
+  "source_sha256": {
+    "__init__.py": "0c8d4817360d3952c700caba874c15fba95bfb2c1fcdffc5be91ee5dd7fc8629",
+    "__main__.py": "3c0666ee7f13880ba788c7ea762401cd921461fa1b9f5bd2ed3d23fb56498b9b",
+    "artifacts.py": "3683a20924e10354ecb2cafd11b800c4af4662bd14e6e893d92c004289f3264e",
+    "benchmark.py": "c2c79b4f99def3c8ee0bd8812bc5a946b4ddba5d2b7e2f1d6cb8dd8d4760204a",
+    "cli.py": "8816db01a870838c5b5f53cf9bcc5c7784989ab0efd7d0fd43e323ef5b108ce9",
+    "config.py": "3568c439e2f7e73a6b5d392a6ca8841c2c6f1b450254d39fc85e8b228bfe6ad8",
+    "conversion.py": "2021d38a9060947b3c7f6ac100b58f136c84f3cfaf92f6a6d337bc4210566572",
+    "data_model.py": "9919bc45517af0cf007cb952f3c07865c33ae32a49e233bd7e5367858e4a7aab",
+    "environment.py": "5bd50101bfdc12451cdf71d54436902df333edce7a7689dde387e367bb2d64bf",
+    "experiment.py": "7b144a4487073690e43cb3b6184db0222feb39de0667255ae503a6f747fd2826",
+    "profiling.py": "f77bc01f95f0848d1f93ac8931cdb0a420f4a94eef0587cfd4f4149033e40078",
+    "reporting.py": "8b3556971eba774bc4565fb4e686dd610b498b3f9a745872ae326ea0f05270f7",
+    "runtime.py": "67eb916bf6573f5a972d2db918aac9c001f3e25ec45582930e482b1dd567dbc2",
+    "study.py": "461fecc29dc5e006d05b85195b56a1ee591677583f652b3a35bf4bfddd40a530",
+    "study_reporting.py": "105f6679750f48ad063d455cc5ec288af2c79b87cfca85a4277d556ec9a4bd68",
+    "validation.py": "86e88450984db812cee6258d66428b944a3a08d87ccb3d946d74aa0efb4aaf8e"
+  },
+  "artifacts_sha256": {
+    "dataset.npz": "cff011cc782654f1526e8d46c616b2f959024d62f348fd50cc43da63e2fac0e1",
+    "random_forest.joblib": "a82f0e8c25fbe292921d931ac89eeb047345662b775c88e6b9c1c087529dd6d4",
+    "onnx_zipmap.onnx": "a5fe3720d3c6a8ea02f20447490db9815c129a4bbf4d834c76beba5fc3a5074a",
+    "onnx_tensor.onnx": "e6da54a74abc1c02802eefe5d4ba0b83f738ffeadb82d9f4dabf93978022eb93",
+    "batch_indices.npz": "20b1c6fd1d24c19ad800224539ef3c8b1bb3f7e6c1777fba9b07d486822bbd30",
+    "config.json": "cce60e182a50fe2c88ef403fcabd5fc19dee1259aeb27f8786d9f4ef1c0964a0",
+    "model_parameters.json": "d1fb47718c4fbdc73c373b3b869e7817785b35828dc45e6ae9b066b9125c19cb",
+    "model_metrics.json": "49e697ab6d33c53186e20bff5746ad5abf0e8f55edd53d47b90eaf45e837f6a1",
+    "conversion.json": "a3f5bb0607adc18504f416dc684e6ad6f4d1f095f4636022104e8fdc1640381b",
+    "runtime_settings.json": "aff892850c2497204a368d8ffce77958675539f959a266f7953d26a4a05ae20c"
+  },
+  "command": [
+    "C:\\Users\\jason\\Documents\\cource\\y4sem1\\comp4330\\scikit-learn_ONNX\\onnx_benchmark\\__main__.py",
+    "study",
+    "--output",
+    "output/tree_study_20261104",
+    "--trees",
+    "10",
+    "100",
+    "500",
+    "--repeats",
+    "3",
+    "--profile-calls",
+    "100"
+  ],
+  "benchmark_scope": "probability API wall time, including native output materialization",
+  "excluded": [
+    "load",
+    "session creation",
+    "input preparation",
+    "validation",
+    "ZipMap-to-matrix normalization",
+    "result destruction"
+  ]
+}

@@ -1,0 +1,181 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261103193139
+Username: STUDENTDMN\s1323146
+RunAs User: STUDENTDMN\s1323146
+Configuration Name: 
+Machine: MC235E10 (Microsoft Windows NT 10.0.19044.0)
+Host Application: powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\scripts\setup_environment.ps1
+Process ID: 7296
+PSVersion: 5.1.19041.3803
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.3803
+BuildVersion: 10.0.19041.3803
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]
+Collecting cloudpickle==3.1.2 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\req
+uirements-lock.txt (line 1))
+  Using cached cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting contourpy==1.4.0 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requi
+rements-lock.txt (line 2))
+  Using cached contourpy-1.4.0-cp312-cp312-win_amd64.whl.metadata (3.8 kB)
+Collecting cycler==0.12.1 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\require
+ments-lock.txt (line 3))
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting flatbuffers==25.12.19 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\
+requirements-lock.txt (line 4))
+  Using cached flatbuffers-25.12.19-py2.py3-none-any.whl.metadata (1.0 kB)
+Collecting fonttools==4.66.1 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requ
+irements-lock.txt (line 5))
+  Downloading fonttools-4.66.1-cp312-cp312-win_amd64.whl.metadata (132 kB)
+     ---------------------------------------- 132.6/132.6 kB 1.6 MB/s eta 0:00:00
+Collecting joblib==1.6.0 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requirem
+ents-lock.txt (line 6))
+  Using cached joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting kiwisolver==1.5.1 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requ
+irements-lock.txt (line 7))
+  Using cached kiwisolver-1.5.1-cp312-cp312-win_amd64.whl.metadata (5.2 kB)
+Collecting librt==0.16.0 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requirem
+ents-lock.txt (line 8))
+  Downloading librt-0.16.0-cp312-cp312-win_amd64.whl.metadata (1.3 kB)
+Collecting matplotlib==3.11.2 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\req
+uirements-lock.txt (line 9))
+  Using cached matplotlib-3.11.2-cp312-cp312-win_amd64.whl.metadata (80 kB)
+Collecting ml_dtypes==0.6.0 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requi
+rements-lock.txt (line 10))
+  Using cached ml_dtypes-0.6.0-cp312-cp312-win_amd64.whl.metadata (8.8 kB)
+Collecting mypy==1.20.2 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requireme
+nts-lock.txt (line 11))
+  Downloading mypy-1.20.2-cp312-cp312-win_amd64.whl.metadata (2.4 kB)
+Collecting mypy_extensions==1.1.0 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main
+\requirements-lock.txt (line 12))
+  Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting narwhals==2.27.1 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requi
+rements-lock.txt (line 13))
+  Downloading narwhals-2.27.1-py3-none-any.whl.metadata (15 kB)
+Collecting numpy==2.5.4 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requireme
+nts-lock.txt (line 14))
+  Using cached numpy-2.5.4-cp312-cp312-win_amd64.whl.metadata (6.6 kB)
+Collecting onnx==1.23.2 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requireme
+nts-lock.txt (line 15))
+  Using cached onnx-1.23.2-cp312-abi3-win_amd64.whl.metadata (8.7 kB)
+Collecting onnxruntime==1.31.0 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\re
+quirements-lock.txt (line 16))
+  Downloading onnxruntime-1.31.0-cp312-cp312-win_amd64.whl.metadata (6.0 kB)
+Collecting packaging==26.3 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requir
+ements-lock.txt (line 17))
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pathspec==1.1.1 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requir
+ements-lock.txt (line 18))
+  Downloading pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+Collecting pillow==12.3.0 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\require
+ments-lock.txt (line 19))
+  Downloading pillow-12.3.0-cp312-cp312-win_amd64.whl.metadata (9.3 kB)
+Collecting protobuf==7.36.2 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requi
+rements-lock.txt (line 20))
+  Using cached protobuf-7.36.2-cp310-abi3-win_amd64.whl.metadata (595 bytes)
+Collecting pyparsing==3.3.3 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requi
+rements-lock.txt (line 21))
+  Using cached pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting python-dateutil==2.9.0.post0 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONN
+X-main\requirements-lock.txt (line 22))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting scikit-learn==1.9.1 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\re
+quirements-lock.txt (line 23))
+  Using cached scikit_learn-1.9.1-cp312-cp312-win_amd64.whl.metadata (9.3 kB)
+Collecting scipy==1.18.1 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requirem
+ents-lock.txt (line 24))
+  Using cached scipy-1.18.1-cp312-cp312-win_amd64.whl.metadata (61 kB)
+Collecting six==1.17.0 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requiremen
+ts-lock.txt (line 25))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting skl2onnx==1.20.0 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requi
+rements-lock.txt (line 26))
+  Using cached skl2onnx-1.20.0-py3-none-any.whl.metadata (4.0 kB)
+Collecting threadpoolctl==3.7.0 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\r
+equirements-lock.txt (line 27))
+  Using cached threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+Collecting typing_extensions==4.16.0 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-m
+ain\requirements-lock.txt (line 28))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting openpyxl==3.1.5 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requir
+ements-tracker.txt (line 3))
+  Downloading openpyxl-3.1.5-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting et-xmlfile==2.0.0 (from -r C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\requ
+irements-tracker.txt (line 4))
+  Downloading et_xmlfile-2.0.0-py3-none-any.whl.metadata (2.7 kB)
+Using cached cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Using cached contourpy-1.4.0-cp312-cp312-win_amd64.whl (234 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+Downloading fonttools-4.66.1-cp312-cp312-win_amd64.whl (2.5 MB)
+   ---------------------------------------- 2.5/2.5 MB 39.3 MB/s eta 0:00:00
+Using cached joblib-1.6.0-py3-none-any.whl (306 kB)
+Using cached kiwisolver-1.5.1-cp312-cp312-win_amd64.whl (70 kB)
+Downloading librt-0.16.0-cp312-cp312-win_amd64.whl (126 kB)
+   ---------------------------------------- 126.2/126.2 kB 7.2 MB/s eta 0:00:00
+Using cached matplotlib-3.11.2-cp312-cp312-win_amd64.whl (9.3 MB)
+Using cached ml_dtypes-0.6.0-cp312-cp312-win_amd64.whl (439 kB)
+Downloading mypy-1.20.2-cp312-cp312-win_amd64.whl (10.9 MB)
+   ---------------------------------------- 10.9/10.9 MB 65.5 MB/s eta 0:00:00
+Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+Downloading narwhals-2.27.1-py3-none-any.whl (483 kB)
+   ---------------------------------------- 483.2/483.2 kB ? eta 0:00:00
+Using cached numpy-2.5.4-cp312-cp312-win_amd64.whl (12.6 MB)
+Using cached onnx-1.23.2-cp312-abi3-win_amd64.whl (7.9 MB)
+Downloading onnxruntime-1.31.0-cp312-cp312-win_amd64.whl (14.9 MB)
+   ---------------------------------------- 14.9/14.9 MB 93.8 MB/s eta 0:00:00
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pathspec-1.1.1-py3-none-any.whl (57 kB)
+   ---------------------------------------- 57.3/57.3 kB 2.9 MB/s eta 0:00:00
+Downloading pillow-12.3.0-cp312-cp312-win_amd64.whl (7.2 MB)
+   ---------------------------------------- 7.2/7.2 MB 77.6 MB/s eta 0:00:00
+Using cached protobuf-7.36.2-cp310-abi3-win_amd64.whl (456 kB)
+Using cached pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+   ---------------------------------------- 229.9/229.9 kB 13.7 MB/s eta 0:00:00
+Using cached scikit_learn-1.9.1-cp312-cp312-win_amd64.whl (8.3 MB)
+Using cached scipy-1.18.1-cp312-cp312-win_amd64.whl (36.7 MB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached skl2onnx-1.20.0-py3-none-any.whl (317 kB)
+Using cached threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading openpyxl-3.1.5-py2.py3-none-any.whl (250 kB)
+   ---------------------------------------- 250.9/250.9 kB ? eta 0:00:00
+Downloading et_xmlfile-2.0.0-py3-none-any.whl (18 kB)
+Installing collected packages: flatbuffers, typing_extensions, threadpoolctl, six, pyparsing, protobuf, pillow, pathspec
+, packaging, numpy, narwhals, mypy_extensions, librt, kiwisolver, fonttools, et-xmlfile, cycler, cloudpickle, scipy, pyt
+hon-dateutil, openpyxl, onnxruntime, mypy, ml_dtypes, joblib, contourpy, scikit-learn, onnx, matplotlib, skl2onnx
+Successfully installed cloudpickle-3.1.2 contourpy-1.4.0 cycler-0.12.1 et-xmlfile-2.0.0 flatbuffers-25.12.19 fonttools-4
+.66.1 joblib-1.6.0 kiwisolver-1.5.1 librt-0.16.0 matplotlib-3.11.2 ml_dtypes-0.6.0 mypy-1.20.2 mypy_extensions-1.1.0 nar
+whals-2.27.1 numpy-2.5.4 onnx-1.23.2 onnxruntime-1.31.0 openpyxl-3.1.5 packaging-26.3 pathspec-1.1.1 pillow-12.3.0 proto
+buf-7.36.2 pyparsing-3.3.3 python-dateutil-2.9.0.post0 scikit-learn-1.9.1 scipy-1.18.1 six-1.17.0 skl2onnx-1.20.0 thread
+poolctl-3.7.0 typing_extensions-4.16.0
+
+[notice] A new release of pip is available: 24.0 -> 26.3
+[notice] To update, run: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\.venv\Scripts\pyt
+hon.exe -m pip install --upgrade pip
+No broken requirements found.
+usage: __main__.py [-h] {run,import} ...
+
+Run, freshly verify and automatically record an experiment in Excel.
+
+positional arguments:
+  {run,import}
+    run         Run the benchmark, verify it, then record it
+    import      Freshly verify an existing run, then record it without remeasuring
+
+options:
+  -h, --help    show this help message and exit
+
+Setup completed. Close the tracker in Excel, then run Run_Experiments.cmd.
+Setup log: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\logs\setup_20261103_193139_543e1b30.log
+**********************
+Windows PowerShell transcript end
+End time: 20261103193204
+**********************

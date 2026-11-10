@@ -1,0 +1,136 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261103193724
+Username: STUDENTDMN\s1323146
+RunAs User: STUDENTDMN\s1323146
+Configuration Name: 
+Machine: MC235E10 (Microsoft Windows NT 10.0.19044.0)
+Host Application: powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\scripts\run_team_experiments.ps1
+Process ID: 15180
+PSVersion: 5.1.19041.3803
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.3803
+BuildVersion: 10.0.19041.3803
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Keep the same power and workload conditions. Run only one benchmark at a time.
+Close ONNX_Experiment_Tracker.xlsx in Excel before starting.
+Planned runs: 4. Each successful run is freshly verified and added to the tracker.
+
+Starting Independent reproduction (1 of 4).
+Workflow log: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\logs\20261103T113724Z_5d3a51
+08
+Experiment output: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\output\runs\20261103T11
+3724Z_5d3a5108
+Correctness passed on 114 distinct held-out cases
+Measured batch 1: 1000 calls per variant
+Measured batch 16: 1000 calls per variant
+Measured batch 64: 1000 calls per variant
+Measured batch 256: 1000 calls per variant
+{
+  "passed": true,
+  "groups": 12,
+  "timing_rows": 12000,
+  "checks": [
+    "source and model hashes",
+    "disjoint held-out split",
+    "reloaded prediction equivalence",
+    "raw timing counts",
+    "summary statistics"
+  ]
+}
+Excel recorded: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\ONNX_Experiment_Tracker.xl
+sx (RUN-003)
+Workflow complete.
+Waiting 60 seconds before the next run.
+
+Starting Controlled repeat (2 of 4).
+Workflow log: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\logs\20261103T113908Z_8f07f5
+0f
+Experiment output: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\output\runs\20261103T11
+3908Z_8f07f50f
+Correctness passed on 114 distinct held-out cases
+Measured batch 1: 1000 calls per variant
+Measured batch 16: 1000 calls per variant
+Measured batch 64: 1000 calls per variant
+Measured batch 256: 1000 calls per variant
+{
+  "passed": true,
+  "groups": 12,
+  "timing_rows": 12000,
+  "checks": [
+    "source and model hashes",
+    "disjoint held-out split",
+    "reloaded prediction equivalence",
+    "raw timing counts",
+    "summary statistics"
+  ]
+}
+Excel recorded: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\ONNX_Experiment_Tracker.xl
+sx (RUN-004)
+Workflow complete.
+Waiting 60 seconds before the next run.
+
+Starting Controlled repeat (3 of 4).
+Workflow log: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\logs\20261103T114026Z_2feb00
+4b
+Experiment output: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\output\runs\20261103T11
+4026Z_2feb004b
+Correctness passed on 114 distinct held-out cases
+Measured batch 1: 1000 calls per variant
+Measured batch 16: 1000 calls per variant
+Measured batch 64: 1000 calls per variant
+Measured batch 256: 1000 calls per variant
+{
+  "passed": true,
+  "groups": 12,
+  "timing_rows": 12000,
+  "checks": [
+    "source and model hashes",
+    "disjoint held-out split",
+    "reloaded prediction equivalence",
+    "raw timing counts",
+    "summary statistics"
+  ]
+}
+Excel recorded: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\ONNX_Experiment_Tracker.xl
+sx (RUN-005)
+Workflow complete.
+Waiting 60 seconds before the next run.
+
+Starting Controlled repeat (4 of 4).
+Workflow log: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\logs\20261103T114144Z_9993ce
+ea
+Experiment output: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\output\runs\20261103T11
+4144Z_9993ceea
+Correctness passed on 114 distinct held-out cases
+Measured batch 1: 1000 calls per variant
+Measured batch 16: 1000 calls per variant
+Measured batch 64: 1000 calls per variant
+Measured batch 256: 1000 calls per variant
+{
+  "passed": true,
+  "groups": 12,
+  "timing_rows": 12000,
+  "checks": [
+    "source and model hashes",
+    "disjoint held-out split",
+    "reloaded prediction equivalence",
+    "raw timing counts",
+    "summary statistics"
+  ]
+}
+Excel recorded: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\ONNX_Experiment_Tracker.xl
+sx (RUN-006)
+Workflow complete.
+
+All requested experiments were verified and recorded in ONNX_Experiment_Tracker.xlsx.
+Send back the tracker plus the complete output/runs and logs folders.
+Team session log: C:\Users\s1323146\Downloads\scikit-learn_ONNX-main (1)\scikit-learn_ONNX-main\logs\team_20261103_193724_e652b8ff.log
+**********************
+Windows PowerShell transcript end
+End time: 20261103194203
+**********************

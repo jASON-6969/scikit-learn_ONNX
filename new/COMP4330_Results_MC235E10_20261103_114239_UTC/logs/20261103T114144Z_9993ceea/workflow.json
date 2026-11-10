@@ -1,0 +1,106 @@
+{
+  "workflow_id": "20261103T114144Z_9993ceea",
+  "command": "run",
+  "started_at_utc": "2026-11-03T11:41:44.805185+00:00",
+  "status": "complete",
+  "source_directory": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\output\\runs\\20261103T114144Z_9993ceea",
+  "workbook_path": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\ONNX_Experiment_Tracker.xlsx",
+  "workflow_log_directory": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\logs\\20261103T114144Z_9993ceea",
+  "steps": [
+    {
+      "time_utc": "2026-11-03T11:41:44.807178+00:00",
+      "stage": "benchmark",
+      "status": "running",
+      "command": [
+        "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-u",
+        "-m",
+        "onnx_benchmark",
+        "run",
+        "--output",
+        "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\output\\runs\\20261103T114144Z_9993ceea",
+        "--warmup",
+        "50",
+        "--rounds",
+        "10",
+        "--calls",
+        "100"
+      ]
+    },
+    {
+      "time_utc": "2026-11-03T11:42:01.289054+00:00",
+      "stage": "benchmark",
+      "status": "complete",
+      "return_code": 0
+    },
+    {
+      "time_utc": "2026-11-03T11:42:01.290050+00:00",
+      "stage": "verification",
+      "status": "running",
+      "command": [
+        "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-u",
+        "-m",
+        "onnx_benchmark",
+        "verify",
+        "--output",
+        "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\output\\runs\\20261103T114144Z_9993ceea"
+      ]
+    },
+    {
+      "time_utc": "2026-11-03T11:42:02.784053+00:00",
+      "stage": "verification",
+      "status": "complete",
+      "return_code": 0
+    },
+    {
+      "time_utc": "2026-11-03T11:42:02.785050+00:00",
+      "stage": "excel_import",
+      "status": "running"
+    },
+    {
+      "time_utc": "2026-11-03T11:42:03.040196+00:00",
+      "stage": "excel_import",
+      "status": "complete",
+      "result": {
+        "run_id": "RUN-006",
+        "imported": true,
+        "workbook_path": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\ONNX_Experiment_Tracker.xlsx",
+        "evidence_id": "536a0833ceefd263dbec0c43289003facd183237d0a4578618d6663c5bf02930"
+      }
+    }
+  ],
+  "hostname": "MC235E10",
+  "metadata": {
+    "operator": "13231466",
+    "power_mode": "Best performance",
+    "plugged_in": "Yes",
+    "background_load": "idle",
+    "purpose": "Controlled repeat",
+    "notes": " Team batch team_20261103_193724_e652b8ff. Run 4 of 4. Stability repetition 3; exclude the first independent reproduction from the three-repeat comparison.",
+    "workflow_id": "20261103T114144Z_9993ceea",
+    "workflow_log_directory": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\logs\\20261103T114144Z_9993ceea",
+    "console_log": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\logs\\20261103T114144Z_9993ceea\\console.log",
+    "source_directory": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\output\\runs\\20261103T114144Z_9993ceea",
+    "workbook_path": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\ONNX_Experiment_Tracker.xlsx",
+    "hostname": "MC235E10",
+    "measurement_workflow_id": "20261103T114144Z_9993ceea",
+    "measurement_console_log": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\logs\\20261103T114144Z_9993ceea\\console.log",
+    "run_started_at_utc": "2026-11-03T11:41:44.807178+00:00",
+    "run_finished_at_utc": "2026-11-03T11:42:01.289054+00:00",
+    "verification_finished_at_utc": "2026-11-03T11:42:02.785050+00:00"
+  },
+  "excel_result": {
+    "run_id": "RUN-006",
+    "imported": true,
+    "workbook_path": "C:\\Users\\s1323146\\Downloads\\scikit-learn_ONNX-main (1)\\scikit-learn_ONNX-main\\ONNX_Experiment_Tracker.xlsx",
+    "evidence_id": "536a0833ceefd263dbec0c43289003facd183237d0a4578618d6663c5bf02930"
+  },
+  "finished_at_utc": "2026-11-03T11:42:03.041193+00:00"
+}
